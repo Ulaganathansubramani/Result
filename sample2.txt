@@ -1,0 +1,45 @@
+
+public class Triangle {
+	public static void main(String args[]) {
+		int n=5;
+		int c=1;
+		int so=1;
+		for(int i=1;i<=n;i++) {
+			if(i==5) {
+				for(int j=1;j<=i;j++) {
+					System.out.print(" "+"*");
+				}
+			}
+			else {
+				for(int j=i;j<=n;j++) {
+					System.out.print(" ");
+				}
+			}
+			
+			if(c==1) {
+				for(int k=1;k<=c;k++) {
+					System.out.print("*");
+				
+				}
+				c=2;
+			}
+			else {
+				for(int l=1;l<=c;l++) {
+					if(i==5) {
+						continue;
+					}
+					else {
+						System.out.print("*");
+						for(int an=1;an<=so;an++) {
+							System.out.print(" ");
+						}
+						so++;
+					}
+					
+				}
+			}
+			System.out.println();
+		}
+		
+	}
+}
